@@ -1,11 +1,12 @@
 import styled from "@emotion/styled"
 import React from "react"
 import {
-  AiFillLinkedin,
+  // AiFillLinkedin,
   AiOutlineGithub,
-  AiOutlineInstagram,
+  // AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai"
+import { FaBilibili } from "react-icons/fa6";
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -26,7 +27,7 @@ const ContactCard: React.FC = () => {
             <div className="name">github</div>
           </a>
         )}
-        {CONFIG.profile.instagram && (
+        {/* {CONFIG.profile.instagram && (
           <a
             href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
             rel="noreferrer"
@@ -35,7 +36,7 @@ const ContactCard: React.FC = () => {
             <AiOutlineInstagram className="icon" />
             <div className="name">instagram</div>
           </a>
-        )}
+        )} */}
         {CONFIG.profile.email && (
           <a
             href={`mailto:${CONFIG.profile.email}`}
@@ -47,14 +48,14 @@ const ContactCard: React.FC = () => {
             <div className="name">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
+        {CONFIG.profile.bangumi && (
           <a
-            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+            href={`https://bangumi.tv/user/${CONFIG.profile.bangumi}`}
             rel="noreferrer"
             target="_blank"
           >
-            <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
+            <FaBilibili className="icon" />
+            <div className="name">bangumi</div>
           </a>
         )}
       </StyledWrapper>
