@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 
 const d = new Date()
 const y = d.getFullYear()
-const from = +CONFIG.since
+// const from = +CONFIG.since
 
 type Props = {
   className?: string
@@ -18,7 +18,7 @@ const Footer: React.FC<Props> = ({ className }) => {
         target="_blank"
         rel="noreferrer"
       >
-        © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}
+        {/* © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`} */}
       </a>
     </StyledWrapper>
   )
