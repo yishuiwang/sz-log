@@ -6,7 +6,8 @@ import {
   // AiOutlineInstagram,
   AiOutlineMail,
 } from "react-icons/ai"
-import { FaBilibili } from "react-icons/fa6";
+import { RiBilibiliFill } from "react-icons/ri";
+
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -54,7 +55,7 @@ const ContactCard: React.FC = () => {
             rel="noreferrer"
             target="_blank"
           >
-            <FaBilibili className="icon" />
+            <RiBilibiliFill className="icon" />
             <div className="name">bangumi</div>
           </a>
         )}

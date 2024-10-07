@@ -16,7 +16,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
       <h1 className="title">{data.title}</h1>
       {data.type[0] !== "Paper" && (
         <nav>
-          <div className="top">
+          {/* <div className="top">
             {data.author && data.author[0] && data.author[0].name && (
               <>
                 <div className="author">
@@ -38,7 +38,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                 CONFIG.lang
               )}
             </div>
-          </div>
+          </div> */}
           <div className="mid">
             {data.tags && (
               <div className="tags">

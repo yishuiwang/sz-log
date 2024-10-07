@@ -9,16 +9,15 @@ type Props = {}
 const ProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
-      <div className="title">
+      {/* <div className="title">
         <Emoji>💻</Emoji> Profile
-      </div>
+      </div> */}
       <div className="content">
         <div className="top">
           <Image src={CONFIG.profile.image} fill alt="" />
         </div>
         <div className="mid">
-          <div className=" name">{CONFIG.profile.name}</div>
-          <div className="role">{CONFIG.profile.role}</div>
+          {/* <div className=" name">{CONFIG.profile.name}</div> */}
           <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
         </div>
       </div>
@@ -48,6 +47,12 @@ const StyledWrapper = styled.div`
     .top {
       position: relative;
       width: 100%;
+      max-width: 150px; /* 设置最大宽度 */
+      height: auto; /* 自动调整高度 */
+      margin: 0 auto; /* 居中对齐 */
+      img {
+        border-radius: 50%;
+      }
       &:after {
         content: "";
         display: block;
